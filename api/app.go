@@ -10,7 +10,7 @@ import (
 
 func App() {
 	app := &cli.App{
-		Name:  "Healthchecker",
+		Name:  "WebsiteChecker",
 		Usage: "A tiny tool that checks the given domain is down.",
 		Flags: []cli.Flag{
 			&cli.StringFlag{
@@ -41,5 +41,4 @@ func App() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 }
